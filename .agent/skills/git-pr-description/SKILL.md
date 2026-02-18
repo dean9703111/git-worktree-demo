@@ -105,10 +105,10 @@ git diff master..HEAD
 
 依模組 / 元件分組列出改動：
 
-### [元件或模組名稱]
+### [元件或模組名稱] (僅顯示專案相對路徑，如 `src/components/Button.tsx`，**禁止**顯示電腦絕對路徑，亦**禁止**使用 Markdown 連結)
 - 具體改了什麼、為什麼這樣改
 
-### [另一個元件或模組名稱]
+### [另一個元件或模組名稱] (僅顯示專案相對路徑，如 `src/utils/api.ts`，**禁止**顯示電腦絕對路徑，亦**禁止**使用 Markdown 連結)
 - 具體改了什麼
 
 ## 🧪 測試步驟
@@ -150,6 +150,7 @@ git diff master..HEAD
 - 不要在 code block 外面加額外的 `📝 PR Title:` 等前綴，直接輸出可複製的 markdown
 - code block 內的第一行為 PR Title，空一行後接 Description
 - 使用者可要求調整任何部分後再複製使用
+- **重要**：檔案路徑請使用**專案相對路徑** (例如 `src/index.css`)，**禁止**包含電腦絕對路徑 (如 `/Users/user/...`)，且**禁止**產生連結。
 
 ---
 
